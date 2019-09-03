@@ -3,11 +3,13 @@ package it.polito.tdp.food.model;
 public class Food {
 	private Integer food_code;
 	private String display_name;
+	private double d;
 	
-	public Food(Integer food_code, String display_name) {
+	public Food(Integer food_code, String display_name, double d) {
 		super();
 		this.food_code = food_code;
 		this.display_name = display_name;
+		this.d=d;
 	}
 	
 	public Integer getFood_code() {
@@ -51,6 +53,14 @@ public class Food {
 	@Override
 	public String toString() {
 		return display_name;
+	}
+
+	public double getD() {
+		return d;
+	}
+
+	public void setD(double d) {
+		this.d = d;
 	}
 
 	
